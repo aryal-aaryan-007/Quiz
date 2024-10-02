@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(51, 51, 124);
+    display: flex;
+}
+
+.app {
+    height: 325px;
+    width: 420px;
+    margin: 10%;
+    margin-left: 30%;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ans1 {
+    background-color: white;
+    height: 40px;
+    width: 405px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.next {
+    height: 40px;
+    width: 97px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 19px;
+    margin-left: 35%;
+    margin-top: 25;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+
+}
+
+.ans1:hover:not([disabled]) {
+    opacity: 0.6;
+    transition: 0.33s;
+    box-shadow: 1px 2px #888888;
+}
+
+.ans1:disabled {
+    cursor: no-drop;
+    color: black;
+}
+
+.next:hover {
+    opacity: 0.8;
+    transition: 0.33s;
+    box-shadow: 1px 1px #888888;
+}
